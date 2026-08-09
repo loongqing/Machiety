@@ -1,0 +1,56 @@
+/* Machiety 主题：青铜金 + 深夜蓝的文明基调 */
+$primary: #c9a227;
+$secondary: #2a6a7a;
+$surface: #10151f;
+$primary-background: #0d1520;
+
+#status-bar {
+    dock: top;
+    height: 1;
+    background: $primary-background;
+    color: $text;
+    padding: 0 1;
+}
+
+#main-area {
+    height: 1fr;
+}
+
+#map-area {
+    width: 3fr;
+    height: 1fr;
+}
+
+#map-view {
+    height: 1fr;
+    border: heavy $primary;
+    border-title-color: $primary;
+    border-title-align: center;
+}
+
+#map-legend {
+    height: 1;
+    color: $text-muted;
+    padding: 0 1;
+}
+
+#right-pane {
+    width: 1fr;
+}
+
+#info-panel {
+    height: 40%;
+    border: round $secondary;
+    padding: 0 1;
+}
+
+#event-log {
+    height: 1fr;
+    border: round $secondary;
+    padding: 0 1;
+}
+
+#command-bar {
+    dock: bottom;
+    margin: 0 1;
+}

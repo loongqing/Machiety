@@ -1,0 +1,18 @@
+# 复制本文件为 config.toml 并填写。未配置时游戏自动降级为离线 MockLLM，全程可玩。
+
+[world]
+width = 64
+height = 40
+settlers = 50
+# seed = 42          # 不填则每次随机
+
+[llm]
+base_url = "https://api.openai.com/v1"   # 任意 OpenAI 兼容接口地址
+api_key = "sk-xxxx"
+model = "gpt-4o-mini"          # 大模型：规划 / 裁决 / 顿悟 / 反思
+model_small = "gpt-4o-mini"    # 小模型：简单决策 / 批量对话
+concurrency = 8                # 并行请求上限
+timeout = 60
+temperature = 0.8
+# thinking = true              # 思考模式：附带 enable_thinking 并流式输出（Qwen3 等混合思考模型）
+# economy = true               # 节流模式：规划缓存+分组反思，LLM 调用量约降 40%~76%

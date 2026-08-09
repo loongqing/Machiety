@@ -1,0 +1,7 @@
+config.toml
+saves/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.qoder/
